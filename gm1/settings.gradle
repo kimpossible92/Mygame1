@@ -1,0 +1,4 @@
+include ':launcher', ':unityLibrary'
+include 'unityLibrary:AppsFlyer.plugin'
+include 'unityLibrary:OneSignalConfig.plugin'
+include 'unityLibrary:FirebaseApp.androidlib'

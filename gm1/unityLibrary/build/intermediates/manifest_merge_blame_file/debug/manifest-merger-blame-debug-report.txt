@@ -1,0 +1,264 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.unity3d.player"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:3:3-163
+13        android:anyDensity="true"
+13-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:3:135-160
+14        android:largeScreens="true"
+14-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:3:78-105
+15        android:normalScreens="true"
+15-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:3:49-77
+16        android:smallScreens="true"
+16-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:3:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:3:106-134
+18
+19    <uses-feature android:glEsVersion="0x00030000" />
+19-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:46:3-52
+19-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:46:17-49
+20    <uses-feature
+20-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:47:3-91
+21        android:name="android.hardware.vulkan.version"
+21-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:47:17-63
+22        android:required="false" />
+22-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:47:64-88
+23
+24    <uses-permission android:name="android.permission.INTERNET" />
+24-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:48:3-65
+24-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:48:20-62
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:49:3-77
+25-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:49:20-74
+26
+27    <uses-feature
+27-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:50:3-88
+28        android:name="android.hardware.touchscreen"
+28-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:50:17-60
+29        android:required="false" />
+29-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:50:61-85
+30    <uses-feature
+30-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:51:3-99
+31        android:name="android.hardware.touchscreen.multitouch"
+31-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:51:17-71
+32        android:required="false" />
+32-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:51:72-96
+33    <uses-feature
+33-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:52:3-108
+34        android:name="android.hardware.touchscreen.multitouch.distinct"
+34-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:52:17-80
+35        android:required="false" />
+35-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:52:81-105
+36
+37    <application
+37-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:4:3-45:17
+38        android:debuggable="true"
+38-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:4:108-133
+39        android:extractNativeLibs="true"
+39-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:4:134-166
+40        android:icon="@mipmap/app_icon"
+40-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:4:167-198
+41        android:label="@string/app_name"
+41-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:4:75-107
+42        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+42-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:4:16-74
+43        <activity
+43-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:5-12:16
+44            android:name="com.unity3d.player.UnityPlayerActivity"
+44-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:15-68
+45            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+45-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:171-352
+46            android:hardwareAccelerated="false"
+46-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:388-423
+47            android:label="@string/app_name"
+47-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:69-101
+48            android:launchMode="singleTask"
+48-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:139-170
+49            android:resizeableActivity="false"
+49-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:353-387
+50            android:screenOrientation="fullUser" >
+50-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:5:102-138
+51            <intent-filter>
+51-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:6:7-9:23
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:7:9-61
+52-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:7:17-58
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:8:9-69
+54-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:8:19-66
+55            </intent-filter>
+56
+57            <meta-data
+57-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:10:7-82
+58                android:name="unityplayer.UnityActivity"
+58-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:10:18-58
+59                android:value="true" />
+59-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:10:59-79
+60            <meta-data
+60-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:11:7-78
+61                android:name="android.notch_support"
+61-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:11:18-54
+62                android:value="true" />
+62-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:11:55-75
+63        </activity>
+64        <activity
+64-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:13:5-301
+65            android:name="com.facebook.unity.FBUnityLoginActivity"
+65-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:13:15-69
+66            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+66-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:13:70-227
+67            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+67-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:13:228-298
+68        <activity
+68-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:14:5-303
+69            android:name="com.facebook.unity.FBUnityDialogsActivity"
+69-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:14:15-71
+70            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+70-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:14:72-229
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+71-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:14:230-300
+72        <activity
+72-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:15:5-322
+73            android:name="com.facebook.unity.FBUnityGamingServicesFriendFinderActivity"
+73-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:15:15-90
+74            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+74-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:15:91-248
+75            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+75-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:15:249-319
+76        <activity
+76-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:16:5-32:16
+77            android:name="com.facebook.unity.FBUnityAppLinkActivity"
+77-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:16:15-71
+78            android:exported="true" >
+78-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:16:72-95
+79            <intent-filter>
+79-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:17:7-21:23
+80                <action android:name="android.intent.action.VIEW" />
+80-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:18:9-61
+80-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:18:17-58
+81
+82                <category android:name="android.intent.category.DEFAULT" />
+82-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:19:9-68
+82-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:19:19-65
+83
+84                <data android:scheme="" />
+84-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:20:9-35
+84-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:20:15-32
+85            </intent-filter>
+86            <intent-filter>
+86-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:22:7-26:23
+87                <action android:name="android.intent.action.VIEW" />
+87-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:18:9-61
+87-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:18:17-58
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:19:9-68
+89-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:19:19-65
+90
+91                <data android:scheme="https://developers.facebook.com/tools/accesstoken/?app_id=273572613269571" />
+91-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:20:9-35
+91-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:20:15-32
+92            </intent-filter>
+93            <intent-filter>
+93-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:17:7-21:23
+94                <action android:name="android.intent.action.VIEW" />
+94-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:18:9-61
+94-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:18:17-58
+95
+96                <category android:name="android.intent.category.DEFAULT" />
+96-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:19:9-68
+96-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:19:19-65
+97
+98                <data android:scheme="" />
+98-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:20:9-35
+98-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:20:15-32
+99            </intent-filter>
+100        </activity>
+101        <activity
+101-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:33:5-102
+102            android:name="com.facebook.unity.FBUnityDeepLinkingActivity"
+102-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:33:15-75
+103            android:exported="true" />
+103-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:33:76-99
+104        <activity android:name="com.facebook.unity.FBUnityGameRequestActivity" />
+104-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:34:5-78
+104-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:34:15-75
+105
+106        <meta-data
+106-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:35:5-98
+107            android:name="com.facebook.sdk.ApplicationId"
+107-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:35:16-61
+108            android:value="fb273572613269571" />
+108-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:35:62-95
+109        <meta-data
+109-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:36:5-79
+110            android:name="com.facebook.sdk.ClientToken"
+110-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:36:16-59
+111            android:value="" />
+111-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:36:60-76
+112        <meta-data
+112-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:37:5-95
+113            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+113-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:37:16-71
+114            android:value="true" />
+114-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:37:72-92
+115        <meta-data
+115-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:38:5-101
+116            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+116-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:38:16-77
+117            android:value="true" />
+117-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:38:78-98
+118
+119        <provider
+119-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:39:5-171
+120            android:name="com.facebook.FacebookContentProvider"
+120-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:39:15-66
+121            android:authorities="com.facebook.app.FacebookContentProvider273572613269571"
+121-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:39:67-144
+122            android:exported="true" />
+122-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:39:145-168
+123
+124        <meta-data
+124-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:40:5-69
+125            android:name="unity.splash-mode"
+125-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:40:16-48
+126            android:value="0" />
+126-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:40:49-66
+127        <meta-data
+127-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:41:5-74
+128            android:name="unity.splash-enable"
+128-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:41:16-50
+129            android:value="True" />
+129-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:41:51-71
+130        <meta-data
+130-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:42:5-78
+131            android:name="unity.launch-fullscreen"
+131-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:42:16-54
+132            android:value="True" />
+132-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:42:55-75
+133        <meta-data
+133-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:43:5-84
+134            android:name="unity.allow-resizable-window"
+134-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:43:16-59
+135            android:value="False" />
+135-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:43:60-81
+136        <meta-data
+136-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:44:5-81
+137            android:name="notch.config"
+137-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:44:16-43
+138            android:value="portrait|landscape" />
+138-->C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\src\main\AndroidManifest.xml:44:44-78
+139    </application>
+140
+141</manifest>

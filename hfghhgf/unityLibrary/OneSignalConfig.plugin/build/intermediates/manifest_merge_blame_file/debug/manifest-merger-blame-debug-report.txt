@@ -1,0 +1,49 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3   WARNING: Do NOT Modify! Changes will be overwritten by the OneSignal plugin.
+4            Make your changes to Assets/Plugins/Android/AndroidManifest.xml instead.
+5-->
+6<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+7    package="com.onesignal.onesignalsdk"
+8    android:versionCode="1"
+9    android:versionName="1.0" >
+10
+11    <uses-sdk
+12        android:minSdkVersion="1"
+12-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+13        android:targetSdkVersion="9" />
+13-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+14
+15    <permission
+15-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:11:5-121
+16        android:name="com.bicodo.diamondcastleepl.permission.C2D_MESSAGE"
+16-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:11:17-82
+17        android:protectionLevel="signature" />
+17-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:11:83-118
+18
+19    <uses-permission android:name="com.bicodo.diamondcastleepl.permission.C2D_MESSAGE" />
+19-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:12:5-90
+19-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:12:22-87
+20
+21    <application>
+21-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:13:5-22:19
+22        <receiver
+22-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:14:7-21:20
+23            android:name="com.onesignal.GcmBroadcastReceiver"
+23-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:15:13-62
+24            android:permission="com.google.android.c2dm.permission.SEND" >
+24-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:16:13-73
+25            <intent-filter>
+25-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:17:13-20:29
+26                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+26-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:18:17-81
+26-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:18:25-78
+27
+28                <category android:name="com.bicodo.diamondcastleepl" />
+28-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:19:17-72
+28-->E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:19:27-69
+29            </intent-filter>
+30        </receiver>
+31    </application>
+32
+33</manifest>

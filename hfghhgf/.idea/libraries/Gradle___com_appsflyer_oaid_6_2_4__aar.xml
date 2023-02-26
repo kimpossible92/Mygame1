@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :com.appsflyer.oaid-6.2.4:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68724c66b44456e99a0ee20b6174cf1c/com.appsflyer.oaid-6.2.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68724c66b44456e99a0ee20b6174cf1c/com.appsflyer.oaid-6.2.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68724c66b44456e99a0ee20b6174cf1c/com.appsflyer.oaid-6.2.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,65 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:1-23:12
+	package
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:7:5-41
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:9:5-30
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:6:11-69
+	android:versionCode
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:8:5-28
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+permission#com.bicodo.diamondcastleepl.permission.C2D_MESSAGE
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:11:5-121
+	android:protectionLevel
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:11:83-118
+	android:name
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:11:17-82
+uses-permission#com.bicodo.diamondcastleepl.permission.C2D_MESSAGE
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:12:5-90
+	android:name
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:12:22-87
+application
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:13:5-22:19
+receiver#com.onesignal.GcmBroadcastReceiver
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:14:7-21:20
+	android:permission
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:16:13-73
+	android:name
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:15:13-62
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.bicodo.diamondcastleepl
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:17:13-20:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:18:17-81
+	android:name
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:18:25-78
+category#com.bicodo.diamondcastleepl
+ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:19:17-72
+	android:name
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml:19:27-69
+uses-sdk
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		ADDED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml
+		INJECTED from E:\Games\folder\hfghhgf\unityLibrary\OneSignalConfig.plugin\AndroidManifest.xml

@@ -1,0 +1,79 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:3:1-56:12
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:3:1-56:12
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:3:1-56:12
+	package
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:5:5-33
+		INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+		INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:6:5-51
+	xmlns:android
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:4:5-63
+application
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:7:5-55:19
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:8:9-54:20
+	android:theme
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:9:19-60
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:8:19-72
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:10:13-13:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:11:17-69
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:11:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:12:17-77
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:12:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:linked+data:scheme:deep
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:15:13-23:40
+action#android.intent.action.VIEW
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:16:28-80
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:16:36-77
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:18:28-87
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:18:38-84
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:19:28-89
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:19:38-86
+data
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:21:28-58
+	android:host
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:22:34-55
+	android:scheme
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:21:34-55
+	android:pathPrefix
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:50:32-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:retargeting+data:scheme:paz
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:24:24-32:40
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:deeplink+data:scheme:paz
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:33:24-41:40
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:paz.onelink.me+data:pathPrefix:/waF3+data:scheme:https
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:42:24-52:40
+meta-data#unityplayer.UnityActivity
+ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:53:13-88
+	android:value
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:53:65-85
+	android:name
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml:53:24-64
+uses-sdk
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+		INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+		ADDED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
+		INJECTED from C:\Users\1\Downloads\gt\Mygame\gm1\unityLibrary\AppsFlyer.plugin\AndroidManifest.xml
