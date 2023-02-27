@@ -5,16 +5,32 @@ using Facebook.MiniJSON;
 using GameSparks.Api.Requests;
 using System.Collections.Generic;
 using GameSparks.Core;
+using System;
 using System.Linq;
 using UnityEngine.UI;
+using Firebase.Auth;
+using Firebase.Firestore;
+using Firebase.Extensions;
+using Firebase.Platform;
 //using PlayFab;
 //using PlayFab.ClientModels;
 //using LoginResult = PlayFab.ClientModels.LoginResult;
+[FirestoreData]
+public class CustomMetadata
+{
+    [FirestoreProperty]
+    public string id_string { get; set; }
+    [FirestoreProperty]
+    public string Location { get; set; }
+    [FirestoreProperty]
+    public int score { get; set; }
+}
 public class FacebookScript : MonoBehaviour
 {
     [SerializeField] Button GetButtonFB;
     public static FacebookScript THIS;
     private string lastResponse = string.Empty;
+    [SerializeField] private string _location;
     protected string LastResponse
     {
         get
@@ -42,6 +58,30 @@ public class FacebookScript : MonoBehaviour
             this.status = value;
         }
     }
+    public void LoginWithFB2(string accessToken)
+    {
+        FindObjectOfType<move2>().Name = "me";//
+        GetButtonFB.gameObject.SetActive(false);
+        //PortalNetwork.THIS.UserID = response.UserId;
+        GetPicture(AccessToken.CurrentAccessToken.TokenString); Tournament.joined = true; Tournament.tournament.MenuTounamentClick();
+        Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+        Firebase.Auth.Credential credential = Firebase.Auth.FacebookAuthProvider.GetCredential(accessToken);
+        var newMetadata = new MetadataChanges() { };
+        newMetadata.ToString();
+        var firestore = FirebaseFirestore.DefaultInstance;
+        // UpdateMetadataAsync
+        var childData = new CustomMetadata
+        {
+            id_string = "",
+            Location = "ru",
+            score = 1
+        };
+        string parentid = "07775000";
+        //firestore.Document($"children/{parentid}/childs/3").SetAsync(childData);
+        firestore.Collection("children").Document("parentid").Collection("childs").Document().SetAsync(childData);
+
+    }
+
     public void LoginWithFB(string accessToken)
     {
         new FacebookConnectRequest().SetSwitchIfPossible(true).SetAccessToken(accessToken).Send((response) => {
@@ -51,6 +91,40 @@ public class FacebookScript : MonoBehaviour
                 GetButtonFB.gameObject.SetActive(false);
                 PortalNetwork.THIS.UserID = response.UserId;
                 GetPicture(AccessToken.CurrentAccessToken.TokenString);Tournament.joined = true;Tournament.tournament.MenuTounamentClick();
+                Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+                Firebase.Auth.Credential credential = Firebase.Auth.FacebookAuthProvider.GetCredential(accessToken);
+                var newMetadata = new MetadataChanges() {};
+                newMetadata.ToString();
+                var firestore = FirebaseFirestore.DefaultInstance;
+                // UpdateMetadataAsync
+                var childData = new CustomMetadata
+                {
+                    id_string = response.UserId,
+                    Location = "ru", 
+                    score = 1
+                };
+                string parentid = "07775000";
+                //firestore.Document($"children/{parentid}/childs/3").SetAsync(childData);
+                firestore.Collection("children").Document("parentid").Collection("childs").Document().SetAsync(childData);
+
+
+                auth.SignInWithCredentialAsync(credential).ContinueWith(task => {
+                    if (task.IsCanceled)
+                    {
+                        Debug.LogError("SignInWithCredentialAsync was canceled.");
+                        return;
+                    }
+                    if (task.IsFaulted)
+                    {
+                        Debug.LogError("SignInWithCredentialAsync encountered an error: " + task.Exception);
+                        return;
+                    }
+
+                    Firebase.Auth.FirebaseUser newUser = task.Result;
+                    Debug.LogFormat("User signed in successfully: {0} ({1})",
+                        newUser.DisplayName, newUser.UserId);
+                });
+
             }
             else
             {
@@ -172,7 +246,7 @@ public class FacebookScript : MonoBehaviour
             this.LastResponse = "Success Response:\n" + result.RawResult;
 			if(FB.IsLoggedIn){GetButtonFB.gameObject.SetActive(false);}
             //PlayFabClientAPI.LoginWithFacebook(new LoginWithFacebookRequest { CreateAccount = true, AccessToken = AccessToken.CurrentAccessToken.TokenString },OnPlayfabFacebookAuthComplete, OnPlayfabFacebookAuthFailed);
-            //LoginWithFB(AccessToken.CurrentAccessToken.TokenString);
+            LoginWithFB2(AccessToken.CurrentAccessToken.TokenString);
         }
         else
         {

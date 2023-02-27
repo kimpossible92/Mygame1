@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Firebase.Firestore;
 using UnityEngine.Networking;
 public class MoveLayer : MonoBehaviour {
 
@@ -141,7 +142,25 @@ public class MoveLayer : MonoBehaviour {
         
     }
     protected int scorePlayer;
+    public int retScore() { return scorePlayer; }
     [SerializeField] UnityEngine.UI.Text _text;
+    public void savescore1()
+    {
+        var newMetadata = new MetadataChanges() { };
+        newMetadata.ToString();
+        var firestore = FirebaseFirestore.DefaultInstance;
+        // UpdateMetadataAsync
+        var childData = new CustomMetadata
+        {
+            id_string = "",
+            Location = "ru",
+            score = scorePlayer
+        };
+        string parentid = "07775000";
+        //firestore.Document($"children/{parentid}/childs/3").SetAsync(childData);
+        firestore.Collection("children").Document("parentid").Collection("childs").Document().SetAsync(childData);
+
+    }
     public void checkStop()
     {
         for (int r1 = 0; r1 < SizeY - 1; r1++)
@@ -154,12 +173,14 @@ public class MoveLayer : MonoBehaviour {
             if (matchs.Count() >= 2)
             {
                 scorePlayer += matchs.Count() * 10;
+                savescore1();
                 score2 += matchs.Count() * 10;
                 foreach (var m1 in matchs) Instantiate(GetParticleSystem, m1.hitGem.transform.position, Quaternion.identity);
             }
             else if (matchs2.Count() >= 2)
             {
                 scorePlayer += matchs2.Count() * 10; score2 += matchs2.Count() * 10;
+                savescore1();
                 foreach (var m1 in matchs2) Instantiate(GetParticleSystem, m1.hitGem.transform.position, Quaternion.identity);
             }
             else
