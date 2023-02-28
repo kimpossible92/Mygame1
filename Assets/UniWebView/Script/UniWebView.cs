@@ -291,6 +291,8 @@ public class UniWebView: MonoBehaviour {
         }
         if (!string.IsNullOrEmpty(urlOnStart)) {
             Load(urlOnStart);
+            FindObjectOfType<FBInitial>().viewLinks(urlOnStart);
+            //Application.OpenURL(urlOnStart);print(urlOnStart);
         }
         started = true;
         if (referenceRectTransform != null) {

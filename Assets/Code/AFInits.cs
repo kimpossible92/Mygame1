@@ -21,5 +21,6 @@ public class AFInits : MonoBehaviour
     private void ConversionDataSuccessHandler(Dictionary<string, object> dictionary)
     {
         attributes.text += string.Join(", ", dictionary.Select(kv => kv.Key + "=" + kv.Value).ToArray());
+
     }
 }

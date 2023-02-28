@@ -13,6 +13,11 @@ public class FBInitial : MonoBehaviour
 
     private void Awake()
     {
+        
+    }
+    public void viewLinks(string link)
+    {
+        url.value = link;
         if (!FB.IsInitialized)
         {
             FB.Init(InitCallback, OnHideUnity);
@@ -80,6 +85,7 @@ public class FBInitial : MonoBehaviour
             Debug.Log("scriptable " + url.value);
             url.value = result.Url;
             deeplink.text += result.Url;
+            Application.OpenURL(result.Url); print(result.Url);
             Debug.Log(deeplink.text);
         }
     }
