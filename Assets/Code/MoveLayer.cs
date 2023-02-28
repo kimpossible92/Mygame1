@@ -173,14 +173,14 @@ public class MoveLayer : MonoBehaviour {
             if (matchs.Count() >= 2)
             {
                 scorePlayer += matchs.Count() * 10;
-                savescore1();
+                //savescore1();
                 score2 += matchs.Count() * 10;
                 foreach (var m1 in matchs) Instantiate(GetParticleSystem, m1.hitGem.transform.position, Quaternion.identity);
             }
             else if (matchs2.Count() >= 2)
             {
                 scorePlayer += matchs2.Count() * 10; score2 += matchs2.Count() * 10;
-                savescore1();
+                //savescore1();
                 foreach (var m1 in matchs2) Instantiate(GetParticleSystem, m1.hitGem.transform.position, Quaternion.identity);
             }
             else

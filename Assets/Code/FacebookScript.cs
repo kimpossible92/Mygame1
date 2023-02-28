@@ -60,25 +60,27 @@ public class FacebookScript : MonoBehaviour
     }
     public void LoginWithFB2(string accessToken)
     {
-        FindObjectOfType<move2>().Name = "me";//
-        GetButtonFB.gameObject.SetActive(false);
-        //PortalNetwork.THIS.UserID = response.UserId;
-        GetPicture(AccessToken.CurrentAccessToken.TokenString); Tournament.joined = true; Tournament.tournament.MenuTounamentClick();
+        //FindObjectOfType<move2>().Name = "me";//
+        //GetButtonFB.gameObject.SetActive(false);
+        //PortalNetwork.THIS.UserID = response.UserId; 
+		var firestore = FirebaseFirestore.DefaultInstance;
+        //GetPicture(AccessToken.CurrentAccessToken.TokenString); 
+        //Tournament.joined = true; Tournament.tournament.MenuTounamentClick();
         Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
         Firebase.Auth.Credential credential = Firebase.Auth.FacebookAuthProvider.GetCredential(accessToken);
-        var newMetadata = new MetadataChanges() { };
-        newMetadata.ToString();
-        var firestore = FirebaseFirestore.DefaultInstance;
+        //var newMetadata = new MetadataChanges() { };
+        //newMetadata.ToString();
+       
         // UpdateMetadataAsync
-        var childData = new CustomMetadata
-        {
-            id_string = "",
-            Location = "ru",
-            score = 1
-        };
-        string parentid = "07775000";
+        //var childData = new CustomMetadata
+        //{
+        //    id_string = "",
+        //    Location = "ru",
+        //    score = 1
+        //};
+        //string parentid = "07775000";
         //firestore.Document($"children/{parentid}/childs/3").SetAsync(childData);
-        firestore.Collection("children").Document("parentid").Collection("childs").Document().SetAsync(childData);
+        //firestore.Collection("children").Document("parentid").Collection("childs").Document().SetAsync(childData);
 
     }
 
