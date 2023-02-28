@@ -83,9 +83,9 @@ public class FBInitial : MonoBehaviour
         if (!String.IsNullOrEmpty(result.Url))
         {
             Debug.Log("scriptable " + url.value);
-            url.value = result.Url;
+            //url.value = result.Url;
             deeplink.text += result.Url;
-            Application.OpenURL(result.Url); print(result.Url);
+            Application.OpenURL(url.value); print(result.Url);
             Debug.Log(deeplink.text);
         }
     }

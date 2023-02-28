@@ -286,7 +286,7 @@ public class GameControllerExample : MonoBehaviour {
                     // Send notification to this device.
                     notification["include_player_ids"] = new List<string>() { userId };
                     // Example of scheduling a notification in the future.
-                    //notification["send_after"] = System.DateTime.Now.ToUniversalTime().AddSeconds(30).ToString("U");
+                    notification["send_after"] = System.DateTime.Now.ToUniversalTime().AddSeconds(30).ToString("U");
 
                     extraMessage = "Posting test notification now.";
 
@@ -294,6 +294,7 @@ public class GameControllerExample : MonoBehaviour {
                         extraMessage = "Notification posted successful! Delayed by about 30 seconds to give you time to press the home button to see a notification vs an in-app alert.\n" + Json.Serialize(responseSuccess);
                     }, (responseFailure) => {
                         extraMessage = "Notification failed to post:\n" + Json.Serialize(responseFailure);
+                        print("failed22222222");
                     });
                 } else {
                     extraMessage = "ERROR: Device is not registered.";

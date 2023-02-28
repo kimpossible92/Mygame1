@@ -9,7 +9,7 @@ public class WebLNK : MonoBehaviour
 
     private void Start()
     {
-        webviewLink.text += url.value;
-        Debug.Log("wv " + url.value);
+        //webviewLink.text += url.value;
+        //Debug.Log("wv " + url.value);
     }
 }

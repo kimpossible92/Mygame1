@@ -7,7 +7,7 @@ public class OneSignalControl : MonoBehaviour
     void Start()
     {
         // Uncomment this method to enable OneSignal Debugging log output 
-        // OneSignal.SetLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
+        OneSignal.SetLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
 
         // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
         OneSignal.StartInit("52115d72-83bb-45ee-9bca-7059dc4d1c3f")
@@ -27,7 +27,7 @@ public class OneSignalControl : MonoBehaviour
         //Testers for email and ExternalID
         //OneSignal.RemoveExternalUserId();
         //OneSignal.LogoutEmail();
-        OneSignal.SetExternalUserId("SampleUserID1");
+        OneSignal.SetExternalUserId("player_id");
         OneSignal.SetEmail("tester@gmail.com");
         OneSignal.SetExternalUserId("SampleUserID2");
     }
