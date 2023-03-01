@@ -4,6 +4,8 @@ using UnityEngine;
 using Facebook.Unity;
 using System;
 using UnityEngine.UI;
+using FantomLib;
+
 public class FBInitial : MonoBehaviour
 {
     //public static FBInitial facebook;
@@ -85,7 +87,8 @@ public class FBInitial : MonoBehaviour
             Debug.Log("scriptable " + url.value);
             //url.value = result.Url;
             deeplink.text += result.Url;
-            Application.OpenURL(url.value); print(result.Url);
+            //AndroidPlugin.StartOpenURL(url.value); print(result.Url);
+            //FindObjectOfType<AndroidActionController>().StartActionURI(url.value);
             Debug.Log(deeplink.text);
         }
     }

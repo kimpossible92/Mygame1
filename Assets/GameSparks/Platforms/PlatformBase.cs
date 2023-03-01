@@ -292,7 +292,7 @@ namespace GameSparks.Platforms
 							if (ExceptionReporter != null) {
 								ExceptionReporter (e);
 							} else {
-								//Debug.Log (e);
+								Debug.Log (e);
 							}
 						}
 					}
@@ -478,7 +478,7 @@ namespace GameSparks.Platforms
 				{
 					if (message.Length < 1500)
 					{
-						//Debug.Log("GS: " + message);
+						Debug.Log("GS: " + message);
 					} else
 					{
 						Debug.Log("GS: " + message.Substring(0, 1500) + "...");
@@ -533,6 +533,10 @@ namespace GameSparks.Platforms
 		/// Creates a (platform specific) Websocket and returns the instance.
 		/// </summary>
 		public abstract IGameSparksWebSocket GetSocket(string url, Action<string> messageReceived, Action closed, Action opened, Action<string> error);
-	}
+        /// <summary>
+		/// Creates a (platform specific) Websocket and returns the instance.
+		/// </summary>
+		public abstract IGameSparksWebSocket GetBinarySocket(string url, Action<byte[]> messageReceived, Action closed, Action opened, Action<string> error);
+    }
 
 }

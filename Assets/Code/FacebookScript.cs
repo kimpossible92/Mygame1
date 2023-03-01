@@ -248,7 +248,8 @@ public class FacebookScript : MonoBehaviour
             this.LastResponse = "Success Response:\n" + result.RawResult;
 			if(FB.IsLoggedIn){GetButtonFB.gameObject.SetActive(false);}
             //PlayFabClientAPI.LoginWithFacebook(new LoginWithFacebookRequest { CreateAccount = true, AccessToken = AccessToken.CurrentAccessToken.TokenString },OnPlayfabFacebookAuthComplete, OnPlayfabFacebookAuthFailed);
-            LoginWithFB2(AccessToken.CurrentAccessToken.TokenString);
+            //LoginWithFB(AccessToken.CurrentAccessToken.TokenString);
+            //LoginWithFB2(AccessToken.CurrentAccessToken.TokenString);
         }
         else
         {

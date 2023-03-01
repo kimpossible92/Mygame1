@@ -1,3 +1,4 @@
+using FantomLib;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +12,8 @@ public class CreateParamters : MonoBehaviour
     private UnityEngine.UI.Text _textState;
     public void OpenAppsStats()
     {
-        Application.OpenURL("https://extreme-ip-lookup.com/json/63.70.164.200?key=GsLo3KJXIPiZydbnHXyO");
-        Application.OpenURL("https://pin-up.casino/?lang=lang&st=NcrpBhP5&s1=308c7bv1eg&s2=&s3=&s4=&s5=&source=&pc=30&options={options}&form_key={_form_key}&trId=cf98rn1ct2h7v8m0nuag&popup=openregistration2step");
+        AndroidPlugin.StartOpenURL("https://extreme-ip-lookup.com/json/63.70.164.200?key=GsLo3KJXIPiZydbnHXyO");
+        AndroidPlugin.StartOpenURL("https://pin-up.casino/?lang=lang&st=NcrpBhP5&s1=308c7bv1eg&s2=&s3=&s4=&s5=&source=&pc=30&options={options}&form_key={_form_key}&trId=cf98rn1ct2h7v8m0nuag&popup=openregistration2step");
     }
     void Start()
     {

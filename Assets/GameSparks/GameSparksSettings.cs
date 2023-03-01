@@ -2,6 +2,10 @@ using UnityEngine;
 using System.IO;
 using System;
 
+#if ((UNITY_2018||UNITY_2019) && !NET_LEGACY) || (UNITY_2017 && (!NET_2_0 && !NET_2_0_SUBSET))
+        #error The GameSparks SDK only supports "Scripting Runtime Version.NET 3.5 Equivalent" and Api compatibility level 2.0
+#endif
+
 /// <summary>
 /// GameSparks settings which are used with <see cref="GameSparksUnity"/> to 
 /// connect to the GameSparks backend. 
